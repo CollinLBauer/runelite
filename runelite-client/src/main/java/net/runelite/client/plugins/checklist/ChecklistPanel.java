@@ -27,4 +27,8 @@ package net.runelite.client.plugins.checklist;
 import net.runelite.client.ui.PluginPanel;
 
 public class ChecklistPanel extends PluginPanel{
+
+    void init(ChecklistConfig config){
+
+    }
 }

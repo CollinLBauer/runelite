@@ -35,7 +35,7 @@ public interface ChecklistConfig extends Config{
         position = 0,
         keyName = "stashItems",
         name = "STASH Items",
-        description = "Keeps track of whether STASHes contain the required items"
+        description = "Keeps track of whether STASHes contain stored items"
     )
     default boolean stashItems(){return true;}
 }

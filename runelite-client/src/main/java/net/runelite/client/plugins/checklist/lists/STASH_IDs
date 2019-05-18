@@ -1,0 +1,111 @@
+Beginner
+Easy
+    ID: 28959
+        Description: Bridge to Wizard's Tower
+        Location: 3115, 3194, 0
+        Tooltip
+            Before: Inconspicuous crate (easy)
+            After: STASH (easy)
+        Contents
+            x
+            x
+    ID: 28960
+        Description: Behind Fortunado in Draynor
+        Location: 3083, 3254, 0
+        Tooltip
+            Before: Inconspicuous hole (easy)
+            After: STASH (easy)
+        Contents
+            x
+            x
+    ID: 28978
+        Description: In front of Keep Le Faye
+        Location: 2756, 3399, 0
+        Tooltip
+            Before: Inconspicuous hole (easy)
+            After: STASH (easy)
+        Contents
+            x
+            x
+    ID: 28981
+        Description: In front of Lumber Yard
+        Location: 3298, 3490, 0
+        Tooltip
+            Before: Inconspicuous bush (easy)
+            After: STASH (easy)
+        Contents
+            Bronze axe
+            Hardleather body
+            z
+Medium
+    ID: 28987
+        Description: Center of Canifis
+        Location: 3491, 3489, 0
+        Tooltip:
+            Before: Inconspicuous rocks (medium)
+            After: STASH (medium)
+        Contents
+            Mithril platelegs
+            Green robe top
+            Iron 2h sword
+    ID: 28994
+        Description: In front of Yanille bank
+        Location: 2603, 3091, 0
+        Tooltip
+            Before: Inconspicuous rocks (medium)
+            After: STASH (medium)
+        Contents
+            x
+            x
+    ID: 28998
+        Description: Inside Catherby ranging store
+        Location: 2825, 3441, 0
+        Tooltip
+            Before: Inconspicuous crate (medium)
+            After: STASH (medium)
+        Contents
+            x
+            x
+    ID: 29001
+        Description: In front of Catherby bank
+        Location: 2807, 3437, 0
+        Tooltip
+            Before: Inconspicuous bus (medium)
+            After: STASH (medium)
+        Contents
+            Maple longbow
+            Green d'hide chaps
+            Iron med helm
+    ID: 29003
+        Decription: In front of Catherby fishing store
+        Location: 2837, 3436, 0
+        Tooltip
+            Before: Inconspicuous bush (medium)
+            After: STASH (medium)
+        Contents
+            x
+            x
+    ID: 29005
+        Description: By Evil Dave's house in Edgeville
+        Location: 3077, 3503, 0
+        Tooltip
+            Before: Inconspicuous bush (medium)
+            After: STASH (medium)
+        Contents
+            x
+            x
+
+Hard
+
+Elite
+
+Master
+    ID: 29059
+        Description: Next to Old Wise Man's house in Draynor
+        Location: 3095, 3254, 0
+        Tooltip
+            Before: Inconspicuous bush (master)
+            After: STASH (master)
+        Contents
+            x
+            x

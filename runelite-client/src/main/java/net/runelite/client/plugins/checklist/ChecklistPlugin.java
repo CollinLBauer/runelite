@@ -25,29 +25,63 @@
 package net.runelite.client.plugins.checklist;
 
 import javax.inject.Inject;
+
+import com.google.inject.Provides;
+import net.runelite.client.config.ConfigManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.runelite.client.ui.ClientToolbar;
+import net.runelite.client.ui.NavigationButton;
+import net.runelite.client.util.ImageUtil;
+
+import java.awt.image.BufferedImage;
 
 @PluginDescriptor(
     name = "Checklist",
-    description = "Keeps track of certain non-repeatable tasks not tracked elsewhere in the game.",
-    tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos"},
+    description = "Keeps track of certain non-repeatable tasks not otherwise tracked in-game",
+    tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house","costume"},
     loadWhenOutdated = true,
     enabledByDefault = false
 )
 
 public class ChecklistPlugin extends Plugin {
 
+
+    @Inject
+    private ClientToolbar clientToolbar;
+
     @Inject
     private ChecklistConfig config;
 
+    private ChecklistPanel panel;
+    private NavigationButton navButton;
+
+    @Provides
+    ChecklistConfig provideConfig(ConfigManager configManager)
+    {
+        return configManager.getConfig(ChecklistConfig.class);
+    }
+
     @Override
     protected void startUp(){
+        //borrowing  code from NotesPlugin for example
+        panel = injector.getInstance(ChecklistPanel.class);
+        //panel.init(config);
 
+        final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "checklist_icon.png");
+
+        navButton = NavigationButton.builder()
+            .tooltip("Checklist")
+            .icon(icon)
+            .priority(9)
+            .panel(panel)
+            .build();
+
+        clientToolbar.addNavigation(navButton);
     }
 
     @Override
     protected void shutDown(){
-
+        clientToolbar.removeNavigation(navButton);
     }
 }
