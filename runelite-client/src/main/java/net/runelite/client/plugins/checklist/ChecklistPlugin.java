@@ -39,7 +39,7 @@ import java.awt.image.BufferedImage;
 @PluginDescriptor(
     name = "Checklist",
     description = "Keeps track of certain non-repeatable tasks not otherwise tracked in-game",
-    tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house","costume"},
+    tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house"},
     loadWhenOutdated = true,
     enabledByDefault = false
 )
@@ -65,15 +65,15 @@ public class ChecklistPlugin extends Plugin {
     @Override
     protected void startUp(){
         //borrowing  code from NotesPlugin for example
-        panel = injector.getInstance(ChecklistPanel.class);
-        //panel.init(config);
+        panel = new ChecklistPanel(config);
+
 
         final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "checklist_icon.png");
 
         navButton = NavigationButton.builder()
             .tooltip("Checklist")
             .icon(icon)
-            .priority(9)
+            .priority(7)
             .panel(panel)
             .build();
 

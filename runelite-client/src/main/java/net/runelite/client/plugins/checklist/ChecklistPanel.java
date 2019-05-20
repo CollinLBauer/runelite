@@ -24,11 +24,60 @@
  */
 package net.runelite.client.plugins.checklist;
 
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.util.HashMap;
+import java.util.Map;
+import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.PluginPanel;
+import net.runelite.client.ui.components.materialtabs.MaterialTab;
+import net.runelite.client.ui.components.materialtabs.MaterialTabGroup;
 
 public class ChecklistPanel extends PluginPanel{
 
-    void init(ChecklistConfig config){
+    private final ChecklistConfig config;
 
+    /* This is the panel the tabs' respective panels will be displayed on. */
+    private final JPanel display = new JPanel();
+    private final Map<Tab, MaterialTab> uiTabs = new HashMap<>();
+    private final MaterialTabGroup tabGroup = new MaterialTabGroup(display);
+
+    ChecklistPanel(ChecklistConfig config){
+        super(false);
+
+        this.config = config;
+
+        setLayout(new BorderLayout());
+        setBackground(new Color(56, 0, 56)); // This color is just so I know it works.
+
+        display.setBorder(new EmptyBorder(10, 10, 8, 10));
+
+        tabGroup.setLayout(new GridLayout(0, 6, 7, 7));
+        tabGroup.setBorder(new EmptyBorder(10, 10, 0, 10));
+
+        add(tabGroup,BorderLayout.NORTH);
+        add(display,BorderLayout.CENTER);
+
+        /*
+        for (Tab tab : Tab.TABS){
+            addTab(tab);
+        }
+        */
+    }
+
+    private void addTab(Tab tab, TabContentPanel tabContentPanel){
+        JPanel wrapped = new JPanel(new BorderLayout());
+        //wrapped.add(tabContentPanel, BorderLayout.NORTH);
+        wrapped.setBackground(ColorScheme.DARK_GRAY_COLOR);
     }
 }

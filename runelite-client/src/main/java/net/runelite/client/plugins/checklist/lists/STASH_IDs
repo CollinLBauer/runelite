@@ -27,6 +27,16 @@ Easy
         Contents
             x
             x
+    ID: 28979
+        Description: South of Sinclair Mansion
+        Location: 2735, 3534, 0
+        Tooltip
+            Before: Inconspicuous rocks (easy)
+            After: STASH (easy)
+        Contents
+            Leather cowl
+            Blue wizard robe
+            Iron scimitar
     ID: 28981
         Description: In front of Lumber Yard
         Location: 3298, 3490, 0
