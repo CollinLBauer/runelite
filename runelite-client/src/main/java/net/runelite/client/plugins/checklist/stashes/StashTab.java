@@ -22,39 +22,25 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
+package net.runelite.client.plugins.checklist.stashes;
 
-import net.runelite.client.config.Config;
-import net.runelite.client.config.ConfigGroup;
-import net.runelite.client.config.ConfigItem;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import net.runelite.api.ItemID;
 
-@ConfigGroup("checklist")
-public interface ChecklistConfig extends Config{
+@RequiredArgsConstructor
+@Getter
+public enum StashTab {
 
-    @ConfigItem(
-        position = 0,
-        keyName = "stashItems",
-        name = "STASH Items",
-        description = "Keeps track of whether STASHes contain stored items"
-    )
-    default boolean stashItems(){return true;}
+    BEGINNER("Beginner", ItemID.CLUE_SCROLL_BEGINNER),
+    EASY("Easy", ItemID.CLUE_BOTTLE_EASY),
+    MEDIUM("Medium", ItemID.CLUE_SCROLL_MEDIUM),
+    HARD("Hard", ItemID.CLUE_SCROLL_HARD),
+    ELITE("Elite", ItemID.CLUE_SCROLL_ELITE),
+    MASTER("Master", ItemID.CLUE_SCROLL_MASTER);
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "Active Tab",
-        description = "The currently selected tab",
-        hidden = true
-    )
-    default Tab activeTab()
-    {
-        return Tab.OVERVIEW;
-    }
+    public static final StashTab[] STASH_TABS = {BEGINNER,EASY,MEDIUM,HARD,ELITE,MASTER};
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "",
-        description = "",
-        hidden = true
-    )
-    void setActiveTab(Tab t);
+    private final String name;
+    private final int itemID;
 }

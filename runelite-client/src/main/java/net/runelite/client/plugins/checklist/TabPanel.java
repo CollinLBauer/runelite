@@ -24,37 +24,20 @@
  */
 package net.runelite.client.plugins.checklist;
 
-import net.runelite.client.config.Config;
-import net.runelite.client.config.ConfigGroup;
-import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("checklist")
-public interface ChecklistConfig extends Config{
 
-    @ConfigItem(
-        position = 0,
-        keyName = "stashItems",
-        name = "STASH Items",
-        description = "Keeps track of whether STASHes contain stored items"
-    )
-    default boolean stashItems(){return true;}
+import javax.swing.JPanel;
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "Active Tab",
-        description = "The currently selected tab",
-        hidden = true
-    )
-    default Tab activeTab()
-    {
-        return Tab.OVERVIEW;
+public class TabPanel extends JPanel {
+
+    TabPanel() {
+
     }
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "",
-        description = "",
-        hidden = true
-    )
-    void setActiveTab(Tab t);
+    public void update() {
+
+    }
+
+
+
 }

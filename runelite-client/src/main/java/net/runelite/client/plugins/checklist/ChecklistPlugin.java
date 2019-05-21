@@ -28,6 +28,7 @@ import javax.inject.Inject;
 
 import com.google.inject.Provides;
 import net.runelite.client.config.ConfigManager;
+import net.runelite.client.game.ItemManager;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
@@ -38,7 +39,7 @@ import java.awt.image.BufferedImage;
 
 @PluginDescriptor(
     name = "Checklist",
-    description = "Keeps track of certain non-repeatable tasks not otherwise tracked in-game",
+    description = "Aggregates statistics of certain non-repeatable tasks",
     tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house"},
     loadWhenOutdated = true,
     enabledByDefault = false
@@ -53,6 +54,9 @@ public class ChecklistPlugin extends Plugin {
     @Inject
     private ChecklistConfig config;
 
+    @Inject
+    private ItemManager itemManager;
+
     private ChecklistPanel panel;
     private NavigationButton navButton;
 
@@ -65,7 +69,7 @@ public class ChecklistPlugin extends Plugin {
     @Override
     protected void startUp(){
         //borrowing  code from NotesPlugin for example
-        panel = new ChecklistPanel(config);
+        panel = new ChecklistPanel(itemManager, config);
 
 
         final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "checklist_icon.png");
