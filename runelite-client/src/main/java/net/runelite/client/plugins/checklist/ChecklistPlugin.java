@@ -41,7 +41,7 @@ import java.awt.image.BufferedImage;
     name = "Checklist",
     description = "Aggregates statistics of certain non-repeatable tasks",
     tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house"},
-    loadWhenOutdated = true,
+    loadWhenOutdated = false,
     enabledByDefault = false
 )
 
