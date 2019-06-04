@@ -25,24 +25,15 @@
 package net.runelite.client.plugins.checklist.stashes;
 
 import lombok.Getter;
-<<<<<<< HEAD
 import net.runelite.api.NullObjectID;
 import net.runelite.api.ItemID;
 import net.runelite.api.coords.WorldPoint;
 
-=======
-import lombok.RequiredArgsConstructor;
-import net.runelite.api.Item;
-import net.runelite.api.ItemID;
-
-@RequiredArgsConstructor
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
 @Getter
 public enum Stash {
 
     /* Beginner stashes */
     Beg01 (
-<<<<<<< HEAD
         NullObjectID.NULL_34736,
         0,
         0, // bush
@@ -67,38 +58,11 @@ public enum Stash {
         "Bob's Brilliant Axes in Lumbridge",
         new int[] {ItemID.LEATHER_BOOTS, ItemID.BRONZE_AXE},
         new WorldPoint(3233, 3200, 0)
-=======
-        // unknown
-        34736,
-        0,
-        "bush",
-        "Gypsy Aris' Tent", // Varrock Square
-        new int[] {ItemID.GOLD_RING, ItemID.GOLD_NECKLACE}
-        ),
-
-    Beg02 (
-        // unknown
-        34737,
-        0,
-        "bush",
-        "Iffie Nitter in Varrock", // Varrock Square
-        new int[] {ItemID.CHEFS_HAT, ItemID.RED_CAPE}
-    ),
-
-    Beg03 (
-        // unknown
-        34738,
-        0,
-        "bush",
-        "Bob's Brilliant Axes in Lumbridge",
-        new int[] {ItemID.LEATHER_BOOTS, ItemID.BRONZE_AXE}
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
     ),
 
 
     /* Easy stashes */
     Eas01 (
-<<<<<<< HEAD
         NullObjectID.NULL_28958,
         1,
         2, // hole
@@ -168,88 +132,13 @@ public enum Stash {
         "Al Kharid scorpion mine",
         new int[] {ItemID.DESERT_SHIRT, ItemID.LEATHER_GLOVES, ItemID.LEATHER_BOOTS},
         new WorldPoint(3303, 3289, 0)
-=======
-        // unknown
-        28958,
-        1,
-        "hole",
-        "Near a shed in Lumbridge Swamp", // shed to Zanaris
-        new int[] {ItemID.BRONZE_DAGGER, ItemID.IRON_FULL_HELM, ItemID.GOLD_RING}
-    ),
-
-    Eas02 (
-        // 3115, 3194, 0
-        28959,
-        1,
-        "crate",
-        "On the bridge to the Misthalin's Wizard's Tower",
-        new int[] {ItemID.IRON_MED_HELM, ItemID.EMERALD_RING, ItemID.WHITE_APRON}
-    ),
-
-    Eas03 (
-        // 3083, 3254, 0
-        28960,
-        1,
-        "hole",
-        "Draynor Village market", // behind Fortunado
-        new int[] {ItemID.STUDDED_CHAPS, ItemID.IRON_KITESHIELD, ItemID.STEEL_LONGSWORD}
-    ),
-
-    Eas04 (
-        // unknown
-        0,
-        1,
-        "rock",
-        "Limestone mine", // East of Varrock
-        new int[] {ItemID.BRONZE_PLATELEGS, ItemID.STEEL_PICKAXE, ItemID.STEEL_MED_HELM}
-    ),
-
-    Eas05 (
-        // unknown
-        0,
-        1,
-        "bush",
-        "Outside the Legends' Guild gates",
-        new int[] {ItemID.IRON_PLATELEGS, ItemID.EMERALD_AMULET, ItemID.OAK_LONGBOW}
-    ),
-
-    Eas06 (
-        // unknown
-        0,
-        1,
-        "hole",
-        "Mudskipper Point",
-        new int[] {ItemID.BLACK_CAPE, ItemID.LEATHER_CHAPS, ItemID.STEEL_MACE}
-    ),
-
-    Eas07 (
-        // unknown
-        0,
-        1,
-        "crate",
-        "Near the Entrana ferry in Port Sarim",
-        new int[] {ItemID.COIF, ItemID.STEEL_PLATESKIRT, ItemID.SAPPHIRE_NECKLACE}
-    ),
-
-    Eas08 (
-        // unknown
-        0,
-        1,
-        "rock",
-        "Al Kharid scorpion mine",
-        new int[] {ItemID.DESERT_SHIRT, ItemID.LEATHER_GLOVES, ItemID.LEATHER_BOOTS}
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
     ),
 
     Eas09 (
         // unknown
         0,
         1,
-<<<<<<< HEAD
         3, //rocks,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Draynor Manor by the fountain",
         new int[] {ItemID.IRON_PLATEBODY, ItemID.STUDDED_CHAPS, ItemID.BRONZE_FULL_HELM}
     ),
@@ -258,11 +147,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         2, // hole
-=======
-        "hole",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Wheat field near the Lumbridge windmill",
         new int[] {ItemID.BLUE_ROBE_TOP, ItemID.TURQUOISE_ROBE_BOTTOMS, ItemID.OAK_SHORTBOW}
     ),
@@ -271,11 +156,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Crossroads north of Draynor Village",
         new int[] {ItemID.IRON_CHAINBODY, ItemID.SAPPHIRE_RING, ItemID.LONGBOW}
     ),
@@ -284,11 +165,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         3, // rocks
-=======
-        "rock",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Rimmington mine",
         new int[] {ItemID.GOLD_NECKLACE, ItemID.GOLD_RING, ItemID.BRONZE_SPEAR}
     ),
@@ -297,11 +174,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         1, // crate
-=======
-        "crate",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Varrock Palace Library",
         new int[] {ItemID.GREEN_ROBE_TOP, ItemID.HAM_ROBE, ItemID.IRON_WARHAMMER}
     ),
@@ -310,11 +183,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         1, // crate
-=======
-        "crate",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Upstairs in the Ardougne windmill",
         new int[] {ItemID.BLUE_ROBE_TOP, ItemID.HAM_ROBE, ItemID.TIARA}
     ),
@@ -323,11 +192,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Outside the Falador Party Room",
         new int[] {ItemID.STEEL_FULL_HELM, ItemID.STEEL_PLATEBODY, ItemID.IRON_PLATESKIRT}
     ),
@@ -336,11 +201,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         3, // rocks
-=======
-        "rock",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Taverly Stone Circle",
         new int[] {ItemID.BLUE_WIZARD_HAT, ItemID.BRONZE_2H_SWORD}
     ),
@@ -349,11 +210,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Catherby beehive field",
         new int[] {ItemID.DESERT_SHIRT, ItemID.GREEN_ROBE_BOTTOMS, ItemID.STEEL_AXE}
     ),
@@ -362,11 +219,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Near the parrots in Ardougne Zoo",
         new int[] {ItemID.STUDDED_BODY, ItemID.BRONZE_PLATELEGS, ItemID.STAFF}
     ),
@@ -375,11 +228,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         3, // rocks
-=======
-        "rock",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Road junction north of Rimmington",
         new int[] {ItemID.GREEN_HAT, ItemID.CREAM_ROBE_TOP, ItemID.LEATHER_CHAPS}
     ),
@@ -388,41 +237,25 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         2, // hole
-=======
-        "hole",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Outside of the Fishing Guild",
         new int[] {ItemID.EMERALD_RING, ItemID.SAPPHIRE_AMULET, ItemID.BRONZE_CHAINBODY}
     ),
 
     Eas21 (
         // 2756, 3399, 0
-<<<<<<< HEAD
         NullObjectID.NULL_28978,
         1,
         2, // hole
-=======
-        28978,
-        1,
-        "hole",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Outside Keep Le Faye", // north of Legends' Guild
         new int[] {ItemID.COIF, ItemID.IRON_PLATEBODY, ItemID.LEATHER_GLOVES}
     ),
 
     Eas22 (
         // 2735, 3534, 0
-<<<<<<< HEAD
         NullObjectID.NULL_28979,
         1,
         3, // rocks
-=======
-        28979,
-        1,
-        "rocks",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "South of Sinclair Mansion",
         new int[] {ItemID.LEATHER_COWL, ItemID.BLUE_WIZARD_ROBE, ItemID.IRON_SCIMITAR}
     ),
@@ -431,26 +264,16 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Outside the Digsite Exam Centre",
         new int[] {ItemID.WHITE_APRON, ItemID.GREEN_BOOTS, ItemID.LEATHER_GLOVES}
     ),
 
     Eas24 (
         // 3298, 3490, 0
-<<<<<<< HEAD
         NullObjectID.NULL_28981,
         1,
         0, // bush
-=======
-        28981,
-        1,
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Near the Sawmill Operator's booth", // Varrock lumber yard
         new int[] {ItemID.HARDLEATHER_BODY, ItemID.LEATHER_CHAPS, ItemID.BRONZE_AXE}
     ),
@@ -459,11 +282,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         1, // crate
-=======
-        "crate",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Mubariz's room at the Dual Arena",
         new int[] {ItemID.IRON_CHAINBODY, ItemID.LEATHER_CHAPS, ItemID.COIF}
     ),
@@ -472,11 +291,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Outside Varrock Palace courtyard",
         new int[] {ItemID.BLACK_AXE, ItemID.COIF, ItemID.RUBY_RING}
     ),
@@ -485,11 +300,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Near Herquin's shop in Falador", // gem store
         new int[] {ItemID.MITHRIL_PICKAXE, ItemID.BLACK_PLATEBODY, ItemID.IRON_KITESHIELD}
     ),
@@ -498,11 +309,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         0, // bush
-=======
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "South of the Grand Exchange",
         new int[] {ItemID.PINK_SKIRT, ItemID.PINK_ROBE_TOP}
     ),
@@ -511,11 +318,7 @@ public enum Stash {
         // unknown
         0,
         1,
-<<<<<<< HEAD
         1, // crate
-=======
-        "crate",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Aubury's shop in Varrock",
         new int[] {ItemID.AIR_TIARA, ItemID.STAFF_OF_WATER}
     ),
@@ -524,15 +327,9 @@ public enum Stash {
     /* Medium stashes */
     Med01 (
         // 3491, 3489, 0
-<<<<<<< HEAD
         NullObjectID.NULL_28987,
         2,
         3, // rocks
-=======
-        28987,
-        2,
-        "rocks",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "Center of Canifis",
         new int[] {ItemID.MITHRIL_PLATELEGS, ItemID.GREEN_ROBE_TOP, ItemID.IRON_2H_SWORD}
     ),
@@ -541,44 +338,26 @@ public enum Stash {
         // 2603, 3091, 0
         28994,
         2,
-<<<<<<< HEAD
         3, // rocks
-=======
-        "rocks",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "In front of Yanille bank",
         new int[] {}
     ),
 
     Med03 (
         // 2825, 3441, 0
-<<<<<<< HEAD
         NullObjectID.NULL_28998,
         2,
         -1,
         "Inside Catherby ranging store",
-=======
-        28998,
-        2,
-        "Inside Catherby ranging store",
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         new int[] {}
     ),
 
     Med04 (
         // 2807, 3437, 0
-<<<<<<< HEAD
         NullObjectID.NULL_29001,
         2,
         0, // bush
         "In front of Catherby bank",
-=======
-        29001,
-        2,
-        "In front of Catherby bank",
-        "bush",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         new int[] {ItemID.MAPLE_LONGBOW, ItemID.GREEN_DHIDE_CHAPS, ItemID.IRON_MED_HELM}
     ),
 
@@ -586,11 +365,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -599,11 +374,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -612,11 +383,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -625,11 +392,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -638,11 +401,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -651,11 +410,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -664,11 +419,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -677,11 +428,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -690,11 +437,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -703,11 +446,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -716,11 +455,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -729,11 +464,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -742,11 +473,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -755,11 +482,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -768,11 +491,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -781,11 +500,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -794,11 +509,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -807,11 +518,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -820,11 +527,7 @@ public enum Stash {
         // unknown
         0,
         2,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -835,11 +538,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -848,11 +547,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -861,11 +556,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -874,11 +565,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -887,11 +574,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -900,11 +583,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -913,11 +592,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -926,11 +601,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -939,11 +610,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -952,11 +619,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -965,11 +628,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -978,11 +637,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -991,11 +646,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1004,11 +655,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1017,11 +664,7 @@ public enum Stash {
         // unknown
         0,
         3,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1032,11 +675,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1045,11 +684,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1058,11 +693,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1071,11 +702,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1084,11 +711,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1097,11 +720,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1110,11 +729,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1123,11 +738,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1136,11 +747,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1149,11 +756,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1162,11 +765,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1175,11 +774,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1188,11 +783,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1201,11 +792,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1214,11 +801,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1227,11 +810,7 @@ public enum Stash {
         // unknown
         0,
         4,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1242,11 +821,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1255,11 +830,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1268,11 +839,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1281,11 +848,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1294,11 +857,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1307,11 +866,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1320,11 +875,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1333,11 +884,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1346,11 +893,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1359,11 +902,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1372,11 +911,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1385,11 +920,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1398,11 +929,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1411,11 +938,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1424,11 +947,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1437,11 +956,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1450,11 +965,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1463,11 +974,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1476,11 +983,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1489,11 +992,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     ),
@@ -1502,11 +1001,7 @@ public enum Stash {
         // unknown
         0,
         5,
-<<<<<<< HEAD
         -1,
-=======
-        "",
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
         "",
         new int[] {}
     );
@@ -1533,7 +1028,7 @@ public enum Stash {
 
 
     /* STASH variables */
-<<<<<<< HEAD
+
     private final int stashID;
     private final WorldPoint[] worldPoints;
     private final int tier;                 // 0 = beginner, 1 = easy, and so on
@@ -1553,7 +1048,7 @@ public enum Stash {
     
     /* Notes...
      * - commented numbers are in-game co-ordinates
-=======
+
     private final int stashID;          // game object ID
     private final int tier;             // beginner = 0, easy = 1, and so on
     private final String type;          // bush, crate, hole, rocks
@@ -1564,7 +1059,7 @@ public enum Stash {
      * - commented numbers are in-game co-ordinates
      * - order is based on noticeboard in Watson's house
      *   (order still needs to be verified)
->>>>>>> 1f8cb9ff88b801e15bc4dd981f1d4bdf12c5d70b
+
      * - descriptions still need to be verified
      */
 }
