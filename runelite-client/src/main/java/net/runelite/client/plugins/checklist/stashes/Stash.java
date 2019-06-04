@@ -1028,14 +1028,12 @@ public enum Stash {
 
 
     /* STASH variables */
-
     private final int stashID;
-    private final WorldPoint[] worldPoints;
     private final int tier;                 // 0 = beginner, 1 = easy, and so on
     private final int type;                 // 0 = bush, 1 = crate, 2 = hole, 3 = rocks
     private final String description;       // as described in Watson's house
     private final int[] storedItems;
-
+    private final WorldPoint[] worldPoints;
     
     Stash(int stashID, int tier, int type, String description, int[] storedItems, WorldPoint... worldPoints){
         this.stashID = stashID;
@@ -1048,18 +1046,6 @@ public enum Stash {
     
     /* Notes...
      * - commented numbers are in-game co-ordinates
-
-    private final int stashID;          // game object ID
-    private final int tier;             // beginner = 0, easy = 1, and so on
-    private final String type;          // bush, crate, hole, rocks
-    private final String location;   // as described in Watson's house
-    private final int[] storedItems;
-
-    /* Notes...
-     * - commented numbers are in-game co-ordinates
-     * - order is based on noticeboard in Watson's house
-     *   (order still needs to be verified)
-
      * - descriptions still need to be verified
      */
 }
