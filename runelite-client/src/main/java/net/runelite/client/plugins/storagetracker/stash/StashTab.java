@@ -22,22 +22,25 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
+package net.runelite.client.plugins.storagetracker.stash;
 
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import net.runelite.api.ItemID;
 
+@RequiredArgsConstructor
+@Getter
+public enum StashTab {
 
-import javax.swing.JPanel;
+    BEGINNER("Beginner", ItemID.CLUE_SCROLL_BEGINNER),
+    EASY("Easy", ItemID.CLUE_BOTTLE_EASY),
+    MEDIUM("Medium", ItemID.CLUE_SCROLL_MEDIUM),
+    HARD("Hard", ItemID.CLUE_SCROLL_HARD),
+    ELITE("Elite", ItemID.CLUE_SCROLL_ELITE),
+    MASTER("Master", ItemID.CLUE_SCROLL_MASTER);
 
-public class TabPanel extends JPanel {
+    public static final StashTab[] STASH_TABS = {BEGINNER,EASY,MEDIUM,HARD,ELITE,MASTER};
 
-    TabPanel() {
-
-    }
-
-    public void update() {
-
-    }
-
-
-
+    private final String name;
+    private final int itemID;
 }

@@ -22,7 +22,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
+package net.runelite.client.plugins.storagetracker;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -31,8 +31,6 @@ import javax.annotation.Nullable;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import java.awt.Image;
@@ -46,10 +44,10 @@ import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.ui.components.materialtabs.MaterialTab;
 import net.runelite.client.ui.components.materialtabs.MaterialTabGroup;
 
-public class ChecklistPanel extends PluginPanel {
+public class StorageTrackerPanel extends PluginPanel {
 
     private final ItemManager itemManager;
-    private final ChecklistConfig config;
+    private final StorageTrackerConfig config;
 
     /* This is the panel the tabs' respective panels will be displayed on. */
     private final JPanel display = new JPanel();
@@ -61,7 +59,7 @@ public class ChecklistPanel extends PluginPanel {
     @Nullable
     private TabPanel activeTabPanel = null;
 
-    ChecklistPanel(ItemManager itemManager, ChecklistConfig config){
+    StorageTrackerPanel(ItemManager itemManager, StorageTrackerConfig config){
         super(false);
 
         this.itemManager = itemManager;

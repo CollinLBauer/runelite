@@ -22,7 +22,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist.stashes;
+package net.runelite.client.plugins.storagetracker.stash;
 
 import lombok.Getter;
 import net.runelite.api.NullObjectID;
@@ -32,7 +32,7 @@ import net.runelite.api.coords.WorldPoint;
 @Getter
 public enum Stash {
 
-    /* Beginner stashes */
+    /* Beginner stash */
     Beg01 (
         NullObjectID.NULL_34736,
         ClueTier.BEGINNER,
@@ -61,7 +61,7 @@ public enum Stash {
     ),
 
 
-    /* Easy stashes */
+    /* Easy stash */
     Eas01 (
         NullObjectID.NULL_28958,
         ClueTier.EASY,
@@ -324,7 +324,7 @@ public enum Stash {
     ),
 
 
-    /* Medium stashes */
+    /* Medium stash */
     Med01 (
         NullObjectID.NULL_28987,
         ClueTier.MEDIUM,
@@ -533,7 +533,7 @@ public enum Stash {
     ),
 
 
-    /* Hard stashes */
+    /* Hard stash */
     Har01 (
         NullObjectID.NULL_29009,
         ClueTier.HARD,
@@ -670,7 +670,7 @@ public enum Stash {
     ),
 
 
-    /* Elite stashes */
+    /* Elite stash */
     Eli01 (
         NullObjectID.NULL_29024,
         ClueTier.ELITE,
@@ -816,7 +816,7 @@ public enum Stash {
     ),
 
 
-    /* Master stashes */
+    /* Master stash */
     Mas01 (
         NullObjectID.NULL_29040,
         ClueTier.MASTER,
@@ -911,7 +911,7 @@ public enum Stash {
         NullObjectID.NULL_29050,
         ClueTier.MASTER,
         StashType.UNKNOWN,
-        "Tent in Lord Iorweth's encampment", // South of Priffindas
+        "Tent in Lord Iorweth's encampment", // Southeast of Priffindas
         new int[] {},
         new WorldPoint(2198, 3257, 0)
     ),
@@ -947,7 +947,7 @@ public enum Stash {
         NullObjectID.NULL_29054,
         ClueTier.MASTER,
         StashType.UNKNOWN,
-        "Outside K'ril Tsutsaroth's room", // God Wars Dungeon, Zamorak
+        "Outside K'ril Tsutsaroth's room", // Zamorak General, GWD
         new int[] {},
         new WorldPoint(2931, 5337, 2)
     ),
@@ -1043,9 +1043,4 @@ public enum Stash {
         this.storedItems = storedItems;
         this.worldPoints = worldPoints;
     }
-    
-    /* Notes...
-     * - commented numbers are in-game co-ordinates
-     * - descriptions still need to be verified
-     */
 }

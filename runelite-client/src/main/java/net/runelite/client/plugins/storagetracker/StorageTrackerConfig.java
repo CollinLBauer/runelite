@@ -22,25 +22,39 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist.stashes;
+package net.runelite.client.plugins.storagetracker;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import net.runelite.api.ItemID;
+import net.runelite.client.config.Config;
+import net.runelite.client.config.ConfigGroup;
+import net.runelite.client.config.ConfigItem;
 
-@RequiredArgsConstructor
-@Getter
-public enum StashTab {
+@ConfigGroup("storagetracker")
+public interface StorageTrackerConfig extends Config{
 
-    BEGINNER("Beginner", ItemID.CLUE_SCROLL_BEGINNER),
-    EASY("Easy", ItemID.CLUE_BOTTLE_EASY),
-    MEDIUM("Medium", ItemID.CLUE_SCROLL_MEDIUM),
-    HARD("Hard", ItemID.CLUE_SCROLL_HARD),
-    ELITE("Elite", ItemID.CLUE_SCROLL_ELITE),
-    MASTER("Master", ItemID.CLUE_SCROLL_MASTER);
+    @ConfigItem(
+        position = 0,
+        keyName = "stashHighlight",
+        name = "Highlight STASHES",
+        description = "Highlights STASH units in the world"
+    )
+    default boolean stashItems(){return true;}
 
-    public static final StashTab[] STASH_TABS = {BEGINNER,EASY,MEDIUM,HARD,ELITE,MASTER};
+    @ConfigItem(
+        keyName = "activeTab",
+        name = "Active Tab",
+        description = "The currently selected tab",
+        hidden = true
+    )
+    default Tab activeTab()
+    {
+        return Tab.OVERVIEW;
+    }
 
-    private final String name;
-    private final int itemID;
+    @ConfigItem(
+        keyName = "setActiveTab",
+        name = "",
+        description = "",
+        hidden = true
+    )
+    void setActiveTab(Tab t);
 }

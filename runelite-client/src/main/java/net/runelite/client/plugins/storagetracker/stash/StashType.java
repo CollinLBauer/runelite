@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.checklist.stashes;
+package net.runelite.client.plugins.storagetracker.stash;
 
 public class StashType {
     public static final int UNKNOWN = -1; //placeholder for debugging

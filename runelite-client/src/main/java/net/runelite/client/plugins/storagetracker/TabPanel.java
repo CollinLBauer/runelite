@@ -22,25 +22,22 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
-
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import net.runelite.api.ItemID;
-
-@RequiredArgsConstructor
-@Getter
-public enum Tab {
-
-    OVERVIEW("Overview", ItemID.OLD_NOTES),
-    STASH("STASH units", ItemID.STASH_UNITS_EASY),
-    COSTUME("Costume Room", ItemID.RAINBOW_SCARF),
-    KUDOS("Kudos", ItemID.RUNE_DISPLAY_CASE),
-    FOSSIL("Fossil Island", ItemID.UNIDENTIFIED_RARE_FOSSIL);
+package net.runelite.client.plugins.storagetracker;
 
 
-    public static final Tab[] TABS = {OVERVIEW,STASH,COSTUME,KUDOS,FOSSIL};
 
-    private final String name;
-    private final int itemID;
+import javax.swing.JPanel;
+
+public class TabPanel extends JPanel {
+
+    TabPanel() {
+
+    }
+
+    public void update() {
+
+    }
+
+
+
 }

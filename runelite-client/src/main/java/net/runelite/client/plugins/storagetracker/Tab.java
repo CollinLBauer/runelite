@@ -22,39 +22,25 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
+package net.runelite.client.plugins.storagetracker;
 
-import net.runelite.client.config.Config;
-import net.runelite.client.config.ConfigGroup;
-import net.runelite.client.config.ConfigItem;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import net.runelite.api.ItemID;
 
-@ConfigGroup("checklist")
-public interface ChecklistConfig extends Config{
+@RequiredArgsConstructor
+@Getter
+public enum Tab {
 
-    @ConfigItem(
-        position = 0,
-        keyName = "stashItems",
-        name = "STASH Items",
-        description = "Keeps track of whether STASHes contain stored items"
-    )
-    default boolean stashItems(){return true;}
+    OVERVIEW("Overview", ItemID.OLD_NOTES),
+    LEPRECHAUN("Tool Leprechaun", ItemID.MAGIC_SECATEURS),
+    COSTUME("Costume Room", ItemID.RAINBOW_SCARF),
+    STASH("STASH units", ItemID.STASH_UNITS_EASY),
+    FOSSIL("Fossil Island", ItemID.UNIDENTIFIED_RARE_FOSSIL);
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "Active Tab",
-        description = "The currently selected tab",
-        hidden = true
-    )
-    default Tab activeTab()
-    {
-        return Tab.OVERVIEW;
-    }
 
-    @ConfigItem(
-        keyName = "activeTab",
-        name = "",
-        description = "",
-        hidden = true
-    )
-    void setActiveTab(Tab t);
+    public static final Tab[] TABS = {OVERVIEW,LEPRECHAUN,STASH,COSTUME,FOSSIL};
+
+    private final String name;
+    private final int itemID;
 }

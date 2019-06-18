@@ -22,7 +22,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package net.runelite.client.plugins.checklist;
+package net.runelite.client.plugins.storagetracker;
 
 import javax.inject.Inject;
 
@@ -38,44 +38,44 @@ import net.runelite.client.util.ImageUtil;
 import java.awt.image.BufferedImage;
 
 @PluginDescriptor(
-    name = "Checklist",
-    description = "Aggregates statistics of certain non-repeatable tasks",
-    tags = {"list", "collection", "stash", "clue", "log", "fossil", "kudos", "poh", "house"},
+    name = "Storage Tracker",
+    description = "Keeps a log of storage units outside the bank",
+    tags = {"list", "collection", "stash", "clue", "log", "storage", "poh", "house"},
     loadWhenOutdated = false,
     enabledByDefault = false
 )
 
-public class ChecklistPlugin extends Plugin {
+public class StorageTrackerPlugin extends Plugin {
 
 
     @Inject
     private ClientToolbar clientToolbar;
 
     @Inject
-    private ChecklistConfig config;
+    private StorageTrackerConfig config;
 
     @Inject
     private ItemManager itemManager;
 
-    private ChecklistPanel panel;
+    private StorageTrackerPanel panel;
     private NavigationButton navButton;
 
     @Provides
-    ChecklistConfig provideConfig(ConfigManager configManager)
+    StorageTrackerConfig provideConfig(ConfigManager configManager)
     {
-        return configManager.getConfig(ChecklistConfig.class);
+        return configManager.getConfig(StorageTrackerConfig.class);
     }
 
     @Override
     protected void startUp(){
         //borrowing  code from NotesPlugin for example
-        panel = new ChecklistPanel(itemManager, config);
+        panel = new StorageTrackerPanel(itemManager, config);
 
 
-        final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "checklist_icon.png");
+        final BufferedImage icon = ImageUtil.getResourceStreamFromClass(getClass(), "storage_tracker_icon.png");
 
         navButton = NavigationButton.builder()
-            .tooltip("Checklist")
+            .tooltip("Storage Tracker")
             .icon(icon)
             .priority(7)
             .panel(panel)

@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.checklist.stashes;
+package net.runelite.client.plugins.storagetracker.stash;
 
 public class ClueTier {
     public static final int BEGINNER = 0;
