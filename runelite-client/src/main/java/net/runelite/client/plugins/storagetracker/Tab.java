@@ -25,22 +25,32 @@
 package net.runelite.client.plugins.storagetracker;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import net.runelite.api.ItemID;
+import net.runelite.client.plugins.storagetracker.costume.CostumePanel;
+import net.runelite.client.plugins.storagetracker.fossil.FossilPanel;
+import net.runelite.client.plugins.storagetracker.leprechaun.LeprechaunPanel;
+import net.runelite.client.plugins.storagetracker.overview.OverviewPanel;
+import net.runelite.client.plugins.storagetracker.stash.StashPanel;
 
-@RequiredArgsConstructor
 @Getter
 public enum Tab {
 
-    OVERVIEW("Overview", ItemID.OLD_NOTES),
-    LEPRECHAUN("Tool Leprechaun", ItemID.MAGIC_SECATEURS),
-    COSTUME("Costume Room", ItemID.RAINBOW_SCARF),
-    STASH("STASH units", ItemID.STASH_UNITS_EASY),
-    FOSSIL("Fossil Island", ItemID.UNIDENTIFIED_RARE_FOSSIL);
+    OVERVIEW(new OverviewPanel(),"Overview", ItemID.OLD_NOTES),
+    LEPRECHAUN(new LeprechaunPanel(),"Tool Leprechaun", ItemID.MAGIC_SECATEURS),
+    COSTUME(new CostumePanel(), "Costume Room", ItemID.MAHOGANY_ARMOUR_CASE),
+    STASH(new StashPanel(),"STASH units", ItemID.STASH_UNITS_EASY),
+    FOSSIL(new FossilPanel(),"Fossil Island", ItemID.UNIDENTIFIED_RARE_FOSSIL);
 
 
     public static final Tab[] TABS = {OVERVIEW,LEPRECHAUN,STASH,COSTUME,FOSSIL};
 
+    private final TabPanel panel;
     private final String name;
     private final int itemID;
+
+    Tab(TabPanel panel, String name, int itemID){
+        this.panel = panel;
+        this.name = name;
+        this.itemID = itemID;
+    }
 }

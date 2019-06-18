@@ -44,7 +44,7 @@ import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.ui.components.materialtabs.MaterialTab;
 import net.runelite.client.ui.components.materialtabs.MaterialTabGroup;
 
-public class StorageTrackerPanel extends PluginPanel {
+public class    StorageTrackerPanel extends PluginPanel {
 
     private final ItemManager itemManager;
     private final StorageTrackerConfig config;
@@ -78,15 +78,14 @@ public class StorageTrackerPanel extends PluginPanel {
 
         // quick band-aid to see if tabs work
         for (Tab tab : Tab.TABS){
-            addTab(tab, new TabPanel());
+            addTab(tab);
         }
-
 }
 
-    private void addTab(Tab tab, TabPanel tabContentPanel) {
+    private void addTab(Tab tab) {
 
         JPanel wrapped = new JPanel(new BorderLayout());
-        wrapped.add(tabContentPanel, BorderLayout.NORTH);
+        wrapped.add(tab.getPanel(), BorderLayout.NORTH);
         wrapped.setBackground(ColorScheme.DARK_GRAY_COLOR);
 
         JScrollPane scroller = new JScrollPane(wrapped);
@@ -113,9 +112,9 @@ public class StorageTrackerPanel extends PluginPanel {
 
         materialTab.setOnSelectEvent(() -> {
             config.setActiveTab(tab);
-            activeTabPanel = tabContentPanel;
+            activeTabPanel = tab.getPanel();
 
-            tabContentPanel.update();
+            tab.getPanel().update();
             return true;
         });
 

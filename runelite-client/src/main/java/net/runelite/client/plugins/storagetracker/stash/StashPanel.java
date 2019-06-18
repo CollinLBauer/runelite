@@ -1,4 +1,7 @@
 package net.runelite.client.plugins.storagetracker.stash;
 
-public class StashPanel {
+import net.runelite.client.plugins.storagetracker.TabPanel;
+
+public class StashPanel extends TabPanel {
+    //TODO
 }

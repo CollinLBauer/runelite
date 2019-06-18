@@ -25,14 +25,10 @@
 package net.runelite.client.plugins.storagetracker;
 
 
-
 import javax.swing.JPanel;
 
-public class TabPanel extends JPanel {
+public abstract class TabPanel extends JPanel {
 
-    TabPanel() {
-
-    }
 
     public void update() {
 

@@ -25,10 +25,8 @@
 package net.runelite.client.plugins.storagetracker.stash;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import net.runelite.api.ItemID;
 
-@RequiredArgsConstructor
 @Getter
 public enum StashTab {
 
@@ -43,4 +41,9 @@ public enum StashTab {
 
     private final String name;
     private final int itemID;
+
+    StashTab(String name, int itemID){
+        this.name = name;
+        this.itemID = itemID;
+    }
 }
