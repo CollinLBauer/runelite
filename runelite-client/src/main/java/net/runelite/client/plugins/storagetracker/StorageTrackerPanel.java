@@ -44,7 +44,7 @@ import net.runelite.client.ui.PluginPanel;
 import net.runelite.client.ui.components.materialtabs.MaterialTab;
 import net.runelite.client.ui.components.materialtabs.MaterialTabGroup;
 
-public class    StorageTrackerPanel extends PluginPanel {
+public class StorageTrackerPanel extends PluginPanel {
 
     private final ItemManager itemManager;
     private final StorageTrackerConfig config;
