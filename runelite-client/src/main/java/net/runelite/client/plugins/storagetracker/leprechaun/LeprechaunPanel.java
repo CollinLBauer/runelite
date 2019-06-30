@@ -2,7 +2,7 @@ package net.runelite.client.plugins.storagetracker.leprechaun;
 
 import net.runelite.api.ItemID;
 import net.runelite.client.game.AsyncBufferedImage;
-import net.runelite.client.game.ItemManager
+import net.runelite.client.game.ItemManager;
 import net.runelite.client.plugins.storagetracker.PanelEntry;
 import net.runelite.client.plugins.storagetracker.TabPanel;
 
@@ -46,7 +46,7 @@ public class LeprechaunPanel extends TabPanel {
 
 
 
-        AsyncBufferedImage icon = itemManager.getImage(entry.getItemID());
+        //AsyncBufferedImage icon = itemManager.getImage(entry.getItemID());
     }
 
     @Override
