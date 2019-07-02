@@ -1,20 +1,16 @@
 package net.runelite.client.plugins.storagetracker.leprechaun;
 
 import net.runelite.api.ItemID;
-import net.runelite.client.game.AsyncBufferedImage;
 import net.runelite.client.game.ItemManager;
 import net.runelite.client.plugins.storagetracker.PanelEntry;
 import net.runelite.client.plugins.storagetracker.TabPanel;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class LeprechaunPanel extends TabPanel {
 
-
-
-
     public LeprechaunPanel(){
+        super();
         buildEntries();
         for (PanelEntry entry : entries){
             addEntry(entry);
@@ -43,8 +39,7 @@ public class LeprechaunPanel extends TabPanel {
     @Override
     protected void addEntry(PanelEntry entry){
         JPanel item = new JPanel(new BorderLayout());
-
-
+        item.setBackground(new Color(255,0,255));
 
         //AsyncBufferedImage icon = itemManager.getImage(entry.getItemID());
     }

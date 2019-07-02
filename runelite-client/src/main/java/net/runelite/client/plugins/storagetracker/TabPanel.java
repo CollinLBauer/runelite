@@ -28,10 +28,19 @@ package net.runelite.client.plugins.storagetracker;
 import net.runelite.client.game.ItemManager;
 
 import javax.swing.JPanel;
+import java.awt.*;
 
 public abstract class TabPanel extends JPanel {
 
+    //protected final ItemManager itemManager;
+
     protected PanelEntry[] entries;
+
+    protected TabPanel(){
+
+        setLayout(new BorderLayout());
+        setBackground(new Color(255,255,0));
+    }
 
     public void update() {
         //TODO
